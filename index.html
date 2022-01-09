@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator</title>
+  </head>
+  <body>
+    <div class="form">
+      <h2>Генератор паролей</h2>
+      <div class="option">
+        <div class="result"></div>
+      </div>
+      <div class="option">
+        <label for="">Длина пароля</label>
+        <input type="number" id="length" min="4" max="25" value="16" />
+      </div>
+      <div class="option">
+        <label for="">Строчные буквы</label>
+        <input type="checkbox" id="lowercase" checked />
+      </div>
+      <div class="option">
+        <label for="">Заглавные буквы</label>
+        <input type="checkbox" id="uppercase" checked />
+      </div>
+      <div class="option">
+        <label for="">Символы</label>
+        <input type="checkbox" id="symbols" checked />
+      </div>
+      <div class="option">
+        <label for="">Цифры</label>
+        <input type="checkbox" id="numbers" checked />
+      </div>
+      <button class="button" id="generate" onclick="generate()">
+        Сгенерировать пароль
+      </button>
+    </div>
+  </body>
+</html>
